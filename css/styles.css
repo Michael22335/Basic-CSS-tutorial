@@ -1,4 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#the-one {
+  color: darkcyan;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+/*makes images responsive*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+a {
+  background-color: lightslategrey;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: #610422;
+}
+
+a:active {
+  color: red;
+}
+
+body {
+  background-color: lightslategrey;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 h1 {
   color: red;
-  background-color: lightblue;
+  background-color: white;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-left: 0.05rem;
+}
+
+.new-color {
+  color: hsl(184, 100%, 51%);
+  background-color: #610422;
+}
+
+.standard-box {
+  background-color: lightcoral;
+  width: 300px;
+  padding: 30px;
+  border: 20px solid blueviolet;
+  margin: 30px;
+  box-sizing: content-box;
+}
+
+.box {
+  background-color: lightcoral;
+  width: 300px;
+  padding: 30px;
+  border: 20px solid blueviolet;
+  margin: 30px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  margin-left: 0.05rem;
+}
+
+.border-box {
+  border: 20px solid blueviolet;
+  margin: 30px;
+  box-sizing: border-box;
 }
